@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(mohamed-nohassi-odxB5oIG_iA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    text-align: center;
+    margin-top: 10rem;
+    color: #fff;
+    float: left;
+    margin-left: 10rem;
+}
+.heading h1{
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    font-size: 45px;
+}
+.heading h4{
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}
+.headingImage img{
+    width: 30rem;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.6);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+.container{
+    color: #fff;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    padding: 2rem;
+    background: rgb(0,4,36);
+    background: linear-gradient(90deg, rgba(0,4,36,0.9080882352941176) 0%, rgba(21,12,157,0.8744747899159664) 36%, rgba(0,112,255,0) 100%);
+    border-radius: 5%;
+}
+.container h4{
+    font-size: 36px;
+    font-weight: bold;
+}
+.container h6{
+    font-size: 22px;
+    margin-top: 2rem;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
