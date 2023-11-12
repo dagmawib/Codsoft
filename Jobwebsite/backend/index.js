@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 const passportSetUp = require("./passport");
 const authRoute = require("./route/auth");
-
+const User = require("./mongo");
 // app.use(
 //     cookieSession({
 //         name:'Session',
@@ -32,6 +32,10 @@ app.use(
         credentials:true
     })
 )
+
+
+///////////////////////
+
 
 app.get("/api", function(req,res){
     res.json({message:"Api is started successfully"});

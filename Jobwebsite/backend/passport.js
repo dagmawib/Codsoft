@@ -1,6 +1,9 @@
 require('dotenv').config()
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const passport = require("passport");
+const User = require("./mongo");
+
+passport.use(User.createStrategy());
 
 passport.use(
     new GoogleStrategy(
@@ -11,8 +14,11 @@ passport.use(
             scope:["profile","email"]
         },
         function(accessToken, refreshToken, profile, cb) {
-            cb(null,profile);
-        })
+            console.log(profile);
+            User.findOrCreate({ email: profile.displayName, googleId: profile.id }, function (err, user) {
+              return cb(err, user);
+            });
+          })
 );
 
 passport.serializeUser((user,done) => {

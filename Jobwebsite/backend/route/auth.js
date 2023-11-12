@@ -30,7 +30,9 @@ router.get("/google/callback",
 )
 
 router.get("/google",passport.authenticate("google", ["profile", "email"]));
+///////////////////
 
+////////////////
 router.get("/logout",(req,res) => {
     req.logOut();
     res.redirect(process.env.CLIENT_URL);
