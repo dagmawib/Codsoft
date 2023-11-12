@@ -1,3 +1,4 @@
+require('dotenv').config()
 const router = require("express").Router();
 const passport = require("passport");
 
@@ -21,7 +22,7 @@ router.get("/login", (req,res) => {
     res.redirect("login");
 });
 
-router.get("/google/jobs",
+router.get("/google/callback",
     passport.authenticate("google",{
         successRedirect:process.env.CLIENT_URL,
         failureRedirect:"/login"

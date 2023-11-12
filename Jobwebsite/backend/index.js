@@ -1,4 +1,5 @@
-require("dotenv").config();
+// import 'dotenv/config'
+require('dotenv').config()
 const express = require("express");
 const session = require('express-session');
 const passport = require("passport");
@@ -16,7 +17,7 @@ const authRoute = require("./route/auth");
 //     })
 // );
 app.use(session({
-    secret:"JobWebsite first secret",
+    secret:"Codsoft JobWebsite first secret",
     resave: false,
     saveUninitialized:false
 }));
@@ -38,6 +39,6 @@ app.get("/api", function(req,res){
 app.use("/auth",authRoute);
 
 
-app.listen("3001", function(req,res){
-    console.log("Server started on port 3001");
+app.listen("5000", function(req,res){
+    console.log("Server started on port 5000");
 } )
