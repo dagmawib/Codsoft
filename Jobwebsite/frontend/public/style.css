@@ -521,7 +521,7 @@
     position: absolute;
     top: 30px;
     width: 350px;
-    height: calc(85% - 400px);
+    height: calc(85% - 250px);
     background: #0f3959;
     z-index: 1;
     padding: 40px;
