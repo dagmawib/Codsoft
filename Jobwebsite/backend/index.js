@@ -8,8 +8,8 @@ const cors = require("cors");
 const app = express();
 const passportSetUp = require("./passport");
 const authRoute = require("./route/auth");
-const User = require("./mongo");
-const Resume = require("./mongo")
+const User = require("./User");
+const Resume = require("./resumeDB")
 const multer = require('multer');
 const path = require('path');
 

@@ -22,14 +22,4 @@ mongoose.connect("mongodb://127.0.0.1:27017/JobWeb")
     userSchema.plugin(findOrCreate);
 
     const User = new mongoose.model("User", userSchema);
-
-    const resumeSchema = new mongoose.Schema ({
-        Fname:String,
-        Lname:String,
-        email:String,
-        image: String, // Correct file path with the filename
-    })
-    const Resume = new mongoose.model("Resume", resumeSchema);
-
-
-module.exports = User, Resume
+module.exports = User

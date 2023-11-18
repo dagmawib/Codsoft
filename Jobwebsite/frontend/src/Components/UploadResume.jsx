@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-// import FileBase64 from 'react-file-base64';
+
 
 
 function UploadResume() {
@@ -27,7 +27,7 @@ function UploadResume() {
                 <input type="file" name="ResumeUpload" />
                 </div>
                 <input type="submit" value="Submit" />
-              </form>
+                </form>
             </div>
           </div>
       </>
