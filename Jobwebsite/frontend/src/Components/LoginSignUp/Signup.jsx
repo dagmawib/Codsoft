@@ -44,15 +44,12 @@ function Signup() {
                     <div className="submit gray" >Sign Up</div>
                 </div>
               </div>
-              <div class="col-sm-12">
-                <div class="card social-block">
-                    <div class="card-body">
-                      <button onClick={googleAuth}>
-                        <a class="btn btn-block"  >
-                        {/* href="/auth/google" */}
+              <div className=" theWhole">
+                <div className=" firstineer">
+                    <div className=" lastOne">
+                      <button type="button" class="btn btn-light" onClick={googleAuth}>
                           <i class="fab fa-google"></i>
-                          Sign Up with Google
-                        </a>
+                           Sign Up with Google
                       </button>
                     
                     </div>

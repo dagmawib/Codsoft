@@ -38,16 +38,15 @@ function Login() {
                     <div className="submit gray" >Login</div>
                 </div>
               </div>
-              <div class="col-sm-12">
-              <div class="card social-block">
-                <div class="card-body">
-                  <button onClick={googleAuth}>
-                  <a class="btn btn-block"  >
-                  {/* href="/auth/google" */}
+              <div >
+              <div class="  theWhole">
+                <div class=" firstineer">
+                <div class=" lastOne">
+                  <button type="button "class="btn btn-light"  onClick={googleAuth}>
                     <i class="fab fa-google"></i>
                      Sign Up with Google
-                  </a>
                   </button>
+                  </div>
                 </div>
              </div>
           </div>

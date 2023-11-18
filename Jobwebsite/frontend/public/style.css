@@ -765,6 +765,17 @@
     color: #F5F7F8;
     visibility: hidden;
   }
+  .login_container .theWhole{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 59%;
+  }
+  
+ 
+
   /* //////////////////////////////JobDetails/////////////////////// */
   .DetailsSecOne{
     margin: 2rem 5rem;

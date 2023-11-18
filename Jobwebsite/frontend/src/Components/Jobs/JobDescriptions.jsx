@@ -19,7 +19,7 @@ function JobDescriptions() {
                     <li>15+ years of experience</li>
                 </ul>
                 <input type="email" placeholder='Enter your email here' />
-                <button type="button" class="btn btn-primary btn-lg">Apply</button>
+                <a href="/UploadResume"><button type="button" class="btn btn-primary btn-lg">Apply</button></a>
             </div>
             <div>
                 <h3>Job Description</h3>

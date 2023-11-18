@@ -6,8 +6,14 @@ mongoose.connect("mongodb://127.0.0.1:27017/JobWeb")
     .then(() => console.log("MongoDB connected"))
     .catch((err) => console.log("Mongo Error", err));
 
+    
+
     const userSchema = new mongoose.Schema ({
-        email:String,
+        email:{},
+        name:String,
+        image:{
+            type:String
+        },
         password:String,
         googleId:String
     });
@@ -17,4 +23,13 @@ mongoose.connect("mongodb://127.0.0.1:27017/JobWeb")
 
     const User = new mongoose.model("User", userSchema);
 
-module.exports = User
+    const resumeSchema = new mongoose.Schema ({
+        Fname:String,
+        Lname:String,
+        email:String,
+        image: String, // Correct file path with the filename
+    })
+    const Resume = new mongoose.model("Resume", resumeSchema);
+
+
+module.exports = User, Resume
